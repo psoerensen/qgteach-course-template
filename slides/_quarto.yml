@@ -1,0 +1,6 @@
+format:
+  revealjs:
+    slide-number: true
+    transition: fade
+
+editor: source

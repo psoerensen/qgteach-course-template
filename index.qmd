@@ -1,0 +1,12 @@
+---
+title: "Course Title"
+---
+
+Welcome to the course website.
+
+Use this page to introduce the course, describe the learning goals, and link to course materials.
+
+## Course materials
+
+- [Notes](notes/notes.qmd)
+- [Introduction slides](slides/introduction.qmd)

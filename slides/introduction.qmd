@@ -1,0 +1,15 @@
+---
+title: "Course Introduction"
+---
+
+## Welcome
+
+- Introduce the course
+- Explain the learning goals
+- Describe how to use the course materials
+
+## Course structure
+
+- Notes provide detailed explanations.
+- Slides summarize key ideas.
+- Tutorials and exercises support practice.

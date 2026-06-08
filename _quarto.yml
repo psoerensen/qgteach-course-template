@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - notes/notes.qmd
+    - slides/introduction.qmd
+  resources:
+    - images/**
+    - narration/**
+
+website:
+  title: "Course Title"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: notes/notes.qmd
+        text: Notes
+      - href: slides/introduction.qmd
+        text: Slides
+
+format:
+  html:
+    toc: true
+
+editor: source
