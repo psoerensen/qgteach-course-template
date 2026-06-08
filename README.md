@@ -4,6 +4,8 @@ This repository is a reusable Quarto template for creating qgteach-style course 
 
 Use it when you want a course repository with a consistent structure for notes, slides, tutorials, exercises, apps, data, images, narration, scripts, tools, and rendered website output.
 
+Command examples in this README are intended to be run in a terminal. In RStudio, use the **Terminal** tab, not the R Console. R code examples, when present, are explicitly labelled as R.
+
 ## What this template provides
 
 The template contains:
@@ -78,7 +80,7 @@ After creating a new course repository:
 
 ## Render the course website
 
-From the repository root, run:
+Run the following command in a terminal from the repository root. In RStudio, use the **Terminal** tab, not the R Console.
 
 ```bash
 quarto render
@@ -90,7 +92,7 @@ The rendered website is written to:
 docs/
 ```
 
-To render a single file while developing, use for example:
+To render a single file while developing, run commands such as:
 
 ```bash
 quarto render notes/notes.qmd
@@ -111,7 +113,7 @@ On GitHub:
    - folder: `/docs`
 5. Save.
 
-Before publishing, render locally and commit the updated `docs/` folder:
+Before publishing, run the following commands in a terminal from the repository root:
 
 ```bash
 quarto render
@@ -165,13 +167,13 @@ website:
 
 `AGENTS.example.md` contains optional guidance for Codex or other coding agents.
 
-To use it locally:
+To use it locally, run the following command in a terminal from the repository root:
 
 ```bash
 cp AGENTS.example.md AGENTS.md
 ```
 
-On Windows PowerShell:
+On Windows PowerShell, use:
 
 ```powershell
 Copy-Item AGENTS.example.md AGENTS.md
@@ -202,3 +204,31 @@ Keep changes small and reviewable. When editing course material:
 - document required R packages
 - render changed files before publishing
 - commit rendered `docs/` output only when the website is ready to update
+
+
+### Using GitHub Desktop
+
+You can use GitHub Desktop instead of terminal commands for committing and pushing changes.
+
+Typical workflow:
+
+1. Open the course repository in GitHub Desktop.
+2. Review the changed files under **Changes**.
+3. Write a short commit message, for example:
+
+```text
+Update course notes
+```
+
+4. Click **Commit to main**.
+5. Click **Push origin**.
+
+Before publishing website changes, render the site from the RStudio **Terminal** tab:
+
+```bash
+quarto render
+```
+
+Then return to GitHub Desktop, review the updated `docs/` files, commit them, and click **Push origin**.
+
+Do not commit local files such as `.Rproj.user/`, `.quarto/`, `.Rhistory`, `.RData`, or `AGENTS.md`.
